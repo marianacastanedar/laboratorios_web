@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #555DA9;  
+  --color-secondary: #161C47;  
+  --color-text: #C7BAFF;       
+  --color-text-segundo: #6E42EA;   
+  --color-acento: #FFFFFF; 
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-secondary);
+    margin: 0%;
+}
