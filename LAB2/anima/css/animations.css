@@ -1,0 +1,122 @@
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes maquina_escribir {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes cursor_parpadeo {
+  0% {
+    border-right-color: var(--color_texto);
+  }
+
+  50% {
+    border-right-color: transparent;
+  }
+
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes niebla_flota {
+  0% {
+    opacity: 0.25;
+    transform: scale(1) translateY(0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.04) translateY(-8px);
+  }
+
+  100% {
+    opacity: 0.25;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulso_boton {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--inicio_brillo);
+  }
+
+  50% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+}
+
+@keyframes fade_simple {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.seccion_principal {
+  opacity: 0;
+  animation: aparecer 1.2s ease 0.2s forwards;
+}
+
+.titulo_maquina {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--color_texto);
+  width: 0;
+  animation:
+    maquina_escribir 2.2s steps(28) 0.8s forwards,
+    cursor_parpadeo 2.2s steps(28) 0.8s forwards;
+}
+
+.niebla {
+  animation: niebla_flota 9s ease-in-out infinite;
+}
+
+.niebla::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 70%, rgba(139, 110, 196, 0.07) 0%, transparent 60%);
+  animation: niebla_flota 13s ease-in-out 3s infinite reverse;
+}
+
+.boton_decision {
+  animation: pulso_boton 3.5s ease-in-out infinite;
+}
+
+.grupo_botones .boton_decision:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.grupo_botones .boton_decision:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.insignia_personaje,
+.divisor,
+.dialogo_dios,
+.pie_titulo {
+  animation: fade_simple 1.5s ease 1s forwards;
+  opacity: 0;
+}

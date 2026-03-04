@@ -1,0 +1,94 @@
+.boton_decision {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radio_boton);
+  border: 1px solid var(--inicio_acento);
+  background: transparent;
+  color: var(--color_texto_claro);
+  font-family: var(--fuente_cuerpo);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.boton_decision::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--inicio_acento);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: var(--radio_boton);
+  z-index: -1;
+}
+
+.boton_decision:hover {
+  color: #fff;
+  box-shadow: 0 0 16px var(--inicio_brillo), 0 0 36px var(--inicio_brillo);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.boton_decision:hover::before {
+  opacity: 0.18;
+}
+
+.boton_decision:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.boton_decision:focus-visible {
+  outline: 2px solid var(--color_texto_claro);
+  outline-offset: 4px;
+}
+
+.boton_reiniciar {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: var(--radio_boton);
+  border: 1px solid var(--color_texto_tenue);
+  background: transparent;
+  color: var(--color_texto_tenue);
+  font-family: var(--fuente_cuerpo);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton_reiniciar:hover {
+  border-color: var(--color_texto);
+  color: var(--color_texto_claro);
+}
+
+.insignia_personaje {
+  font-family: var(--fuente_cuerpo);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--color_texto_tenue);
+  margin-bottom: 0.5rem;
+}
+
+.divisor {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color_principal), transparent);
+  margin: 1.2rem auto;
+}
+
+.dialogo_dios {
+  font-style: italic;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  font-weight: 400;
+  color: var(--color_texto_claro);
+  padding: 0.5rem 0;
+  margin: 1.2rem auto;
+  max-width: 58ch;
+  line-height: 1.9;
+  text-align: center;
+}

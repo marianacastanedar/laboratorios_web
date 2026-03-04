@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --fuente_titulo: 'Ballet', cursive;
+  --fuente_cuerpo: 'EB Garamond', serif;
+  --radio_boton: 40px;
+
+  --inicio_fondo: #0d0f1a;
+  --inicio_acento: #6b72c4;
+  --inicio_brillo: rgba(107, 114, 196, 0.4);
+
+  --decision_fondo: #110d1c;
+  --decision_acento: #8b6ec4;
+  --decision_brillo: rgba(139, 110, 196, 0.4);
+
+  --final_fondo: #0f0f18;
+  --final_acento: #9a9fc9;
+  --final_brillo: rgba(154, 159, 201, 0.4);
+
+  --color_texto: #ccc5e8;
+  --color_texto_tenue: #6e6a8a;
+  --color_texto_claro: #edeaff;
+  --color_principal: #6b72c4;
+}
