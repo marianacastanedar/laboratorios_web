@@ -1,27 +1,27 @@
 # Ánima
 
-A "Choose Your Own Adventure" interactive narrative built with HTML and CSS, inspired by Greek mythology.
+A interactive game to choose, it has 3 endings inspired by greek mythology.
 
 ## About
 
-You are the soul of a young poet and artist who has just died. Standing on the banks of the River Styx, you must face judgment before the gods of the underworld — Charon, Persephone, and Hades — who will determine your eternal fate through philosophical questions about the life you lived.
+You are a soul who has just died. Standing on the banks of the River Styx, you must face judgment before the gods of the underworld — Charon, Persephone, and Hades — who will determine your eternal fate through philosophical questions about the life you lived.
 
 Your answers to their questions will lead you to one of three possible endings:
-- **The Elysian Fields** — for souls who lived with authenticity and wisdom
-- **The Asphodel Meadows** — for ordinary souls with lives of uncertainty
-- **Tartarus** — the abyss beneath everything
+- **The Elysian Fields** — the good ending
+- **The Asphodel Meadows** — the neutral
+- **Tartarus** — the bad ending
 
 ## Structure
 
 ```
 anima/
-├── index.html              ← Start here
+├── index.html             
 ├── css/
-│   ├── story-theme.css     ← Design tokens and variables
-│   ├── base.css            ← Reset and global styles
-│   ├── components.css      ← Buttons, cards, dialogue
-│   ├── layouts.css         ← Grid structure and backgrounds
-│   └── animations.css      ← Keyframes and transitions
+│   ├── story-theme.css     
+│   ├── base.css           
+│   ├── components.css     
+│   ├── layouts.css        
+│   └── animations.css      
 └── paginas/
     ├── caronte.html
     ├── caronte-belleza.html
